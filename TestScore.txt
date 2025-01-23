@@ -21,12 +21,12 @@ Piece: Middle C;
 		Mode: DR; Drums
 		Samples: 16;
 		Folder: "./Drums/";
-		[1] Meter: 2 8 SOL 1.7;
+		[1] Meter: 2 8 SOL 1.7; Speed Of Light
 	[4] Instrument: SM 8 "./Samples/";
 		Mode: SM; Sampling Machine
 		Samples: 8;
 		Folder: "./Samples/";
-		[2] Meter: 2 4 SOS 1.7;
+		[2] Meter: 2 4 SOS 1.7; Speed Of Sound
 [1] Part: I.; 
 	[1] Section: Ionian;
 		[1] Track: [1][1][1];
