@@ -53,7 +53,7 @@ Piece: Middle C;
 					Permutation = 1;
 					Phase = 0;
 				KeyNote = (0);
-				Voice = 0_KICK_36;
+				Voices = 0_KICK_36;
 				Envelope = (0.72, 0.63, 0.81, 0.54);
 				Times = 4;
 
@@ -87,14 +87,14 @@ Piece: Middle C;
 	[3] Section: [2] Phrygian;
 		[1] Track:
 			[1]	Event:
-				ScaleMode = {3} ([66]4);
+				ScaleMode = {7} ([66]4);
 		[2] Track:
 			[1] Event:
 				Rhythm: 1 4 2 3 0;
 	[4]	Section: [2] Lydian;
 		[1] Track:
 			[1]	Event:
-				ScaleMode = {3} ([66]5);
+				ScaleMode = {7} ([66]5);
 
 [2] Part: [1] IB.;
 	[1] Track: [1][2][1];
