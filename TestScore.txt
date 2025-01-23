@@ -15,7 +15,7 @@ Piece: Middle C;
 			Dur = 1.7;
 	[2] Instrument: ET 12 10 4 432.0;
 		[1] Meter: 2 2 SR WL(1,-4);
-	[3]	Instrument: DR 16 "./Drums/";
+	[3] Instrument: DR 16 "./Drums/";
 		Mode: DR; Drums
 		Samples: 16;
 		Folder: "./Drums/";
@@ -40,7 +40,7 @@ Piece: Middle C;
 				Voices = AP(0,2)(1); 
 			[3] Event: [2];
 				Voices = (0,2,4);
-			[4]	Event: [3];
+			[4] Event: [3];
 				Voices = (0,2,4,6);
 			
 		[2] Track: [1][3][2] = [1][1][1]; 
@@ -73,12 +73,12 @@ Piece: Middle C;
 
 			
 	[2] Section: [1] Dorian;
-		[1]	Track:
-			[1]	Event:
+		[1] Track:
+			[1] Event:
 				ScaleMode = {7} ([66]3); 
 				Envelope = MetAttRel(0.9654321,1.0) (0.72);
 		[2] Track:
-			[1]	Event:
+			[1] Event:
 				Rhythm: 1 1 1 1 0;
 				Envelope = WhiNoi(0.63,0.78);
 			[3] Event:
@@ -87,18 +87,18 @@ Piece: Middle C;
 	[3] Section: [2] Phrygian;
 		[1] Track:
 			[1]	Event:
-				ScaleMode = {7} ([66]4);
+				ScaleMode = {3} ([66]4);
 		[2] Track:
 			[1] Event:
 				Rhythm: 1 4 2 3 0;
-	[4]	Section: [2] Lydian;
+	[4] Section: [2] Lydian;
 		[1] Track:
 			[1]	Event:
-				ScaleMode = {7} ([66]5);
+				ScaleMode = {3} ([66]5);
 
 [2] Part: [1] IB.;
 	[1] Track: [1][2][1];
 	[2] Track: [1][3][3] = [1][2][1];
 Play(Piece);
 		
-© 2025 Reed A. (GMDA)
+Â© 2025 Reed A. (GMDA)
