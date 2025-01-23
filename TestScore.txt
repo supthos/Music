@@ -1,19 +1,21 @@
 Piece: Middle C;
 
 [1] Ensemble: 
-	[1] Instrument: ET 12 10 4 440.0;
-		Tuning = ET;
+	[1] Instrument: SW ET 12 10 4 440.0;
+		Mode: SW; SineWave
+		Tuning = ET; EqualTemperament
 		Tones = 12;
 		RefNote = 10;
 		RefOct = 4;
 		RefPit = 440.0;
 		[1] Meter: 2 2 Freq(1,-4) 1; 
-		[2] Meter: 2 8 343.0 1.7;
-			Div = 2;
-			Dep = 8;
-			Del = 343.0;
-			Dur = 1.7;
-	[2] Instrument: ET 12 10 4 432.0;
+		[2] Meter: 2 8 343.0 1.7; One Meter equals (((Dur/Del)^Dep)/Div) seconds.
+			Div = 2; Divisions per meter.
+			Dep = 8; Depth of composition of divisions.
+			Del = 343.0; Delta, or some rate of change.
+			Dur = 1.7; Duration, or some reference magnitude.
+	[2] Instrument: SW ET 12 10 4 432.0;
+		Mode: ST; SawTooth
 		[1] Meter: 2 2 SR WL(1,-4);
 	[3] Instrument: DR 16 "./Drums/";
 		Mode: DR; Drums
@@ -29,7 +31,7 @@ Piece: Middle C;
 	[1] Section: Ionian;
 		[1] Track: [1][1][1];
 			Start = 0.0;
-			Instrument = [1][1][1];
+			Instrument = [1][1][1]; Ensemble, Instrument, Meter.
 			[1] Event: [0];
 				Rhythm: 1 1 1 1 0;
 				ScaleMode = {7} ([66]2);
@@ -47,11 +49,11 @@ Piece: Middle C;
 			Start = 0.0;
 			[1] Event: [0];
 				Rhythm: 1 4 4 1 0;
-					Measures = 1;
-					Parts = 4;
-					Partition = 4;
-					Permutation = 1;
-					Phase = 0;
+					Measures = 1; Rhythm over how many Measures.
+					Parts = 4; Number of Parts per total measures.
+					Partition = 4; Integer Partition of that many parts.
+					Permutation = 1; Permutation of that partition.
+					Phase = 0; Phase offset in equal parts per total measures.
 				KeyNote = (0);
 				Voices = 0_KICK_36;
 				Envelope = (0.72, 0.63, 0.81, 0.54);
