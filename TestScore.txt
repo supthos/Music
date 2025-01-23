@@ -40,7 +40,7 @@ Piece: Middle C;
 				Voices = AP(0,2)(1); 
 			[3] Event: [2];
 				Voices = (0,2,4);
-			[4]	Event: [3];
+			[4] Event: [3];
 				Voices = (0,2,4,6);
 			
 		[2] Track: [1][3][2] = [1][1][1]; 
